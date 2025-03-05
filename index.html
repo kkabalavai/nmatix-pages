@@ -92,6 +92,45 @@
             padding: 10px;
             font-size: 12px;
         }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav a {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -99,7 +138,7 @@
         <header>
             <div class="logo">
                 <a href="index.html"><img src="images/nmatix-logo.jpg" alt="nMATIX"></a>
-	    </div>
+            </div>
             <nav>
                 <!--a href="index.html">Home</a-->
                 <!--a href="#">Services</a-->
@@ -135,4 +174,3 @@
     </div>
 </body>
 </html>
-
