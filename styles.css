@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 145px;
+    height: 26px;
+    object-fit: contain;
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav a {
+    color: #FF8A05;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #FF8A05;
+}
+.hero {
+    text-align: center;
+    padding: 25px 0;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+.feature {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+}
+.reach-out {
+    width: 100%;
+    text-align: center;
+}
+.reach-out a {
+    color: #FF8A05;
+    text-decoration: none;
+}
+.reach-out a:hover {
+    text-decoration: underline;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.contact-info {
+    width: 48%;
+    text-align: left;
+}
+.contact-details {
+    margin-bottom: 20px;
+}
+.contact-details a {
+    color: #FF8A05;
+    text-decoration: none;
+}
+.business-hours {
+    flex-basis: 48%;
+    text-align: left;
+}
+.contact-info h2,
+.business-hours h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}  
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .contact-info, .contact-form {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 14px;
+    }
+}

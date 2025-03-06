@@ -4,159 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nmatix Technologies</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: black;
-            color: white;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            max-width: 1200px;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-            border-bottom: 1px solid #333;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            width: 145px;
-            height: 26px;
-            margin-right: 15px;
-            object-fit: contain;
-        }
-        .logo-text {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #FF8A05;
-        }
-        .hero {
-            text-align: center;
-            padding: 25px 0;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 18px;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #45a049;
-        }
-        .contact-section {
-            display: flex;
-            justify-content: space-between;
-            padding: 50px 0;
-        }
-        .contact-info {
-            flex-basis: 40%;
-        }
-        .contact-form {
-            flex-basis: 50%;
-        }
-        .contact-form input, 
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            color: white;
-        }
-        .contact-form input[type="submit"] {
-            background-color: #4CAF50;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .contact-form input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        .contact-info h2 {
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .contact-details {
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #1a1a1a;
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
-        }
-
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-                padding: 10px;
-            }
-            .hero h1 {
-                font-size: 36px;
-            }
-            .hero p {
-                font-size: 16px;
-            }
-            .contact-section {
-                flex-direction: column;
-                align-items: center;
-            }
-            .contact-info, .contact-form {
-                width: 100%;
-                margin-bottom: 15px;
-            }
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            nav a {
-                margin-left: 0;
-                margin-top: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-            .hero p {
-                font-size: 14px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -166,9 +14,6 @@
             </div>
             <nav>
                 <a href="index.html">Home</a>
-                <!--a href="#">Services</a-->
-                <!--a href="#">About</a-->
-                <!--a href="contact.html">Contact</a-->
             </nav>
         </header>
 
@@ -187,26 +32,15 @@
                 </div>
                 <div class="contact-details">
                     <h3>Email</h3>
-                    <p>contact@nmatix.com</p>
+                    <p><a href="mailto:contact@nmatix.com">contact@nmatix.com</a></p>
                 </div>
             </div>
-            <div class="contact-form">
+            <div class="business-hours">
                 <h2>Business Hours</h2>
                 <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                 <p>Saturday: 10:00 AM - 2:00 PM</p>
                 <p>Sunday: Closed</p>
             </div>
-
-            <!--div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="subject" placeholder="Subject" required>
-                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-                    <input type="submit" value="Send Message">
-                </form>
-            </div-->
         </section> 
 
         <footer>
