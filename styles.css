@@ -112,6 +112,103 @@ footer {
     font-size: 12px;
 }
 
+/* Additional styles for the About page */
+.about-content {
+    padding: 25px 0;
+}
+
+.about-section, 
+.founder-section {
+    margin-bottom: 40px;
+}
+
+.about-section p,
+.founder-section p {
+    margin-bottom: 20px;
+}
+
+.founder-profile {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.founder-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.founder-photo {
+    flex: 0 0 150px;
+}
+
+.founder-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.founder-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.founder-profile h3 {
+    margin-top: 0;
+    color: #FF8A05;
+}
+
+.founder-title {
+    font-style: italic;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.founder-profile ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.founder-profile li {
+    margin-bottom: 5px;
+}
+
+.contact-cta {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.contact-cta a {
+    color: #FF8A05;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-cta a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for About page */
+@media (max-width: 768px) {
+    .founder-profile {
+        padding: 15px;
+    }
+    
+    .founder-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .founder-photo {
+        margin-bottom: 20px;
+    }
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .container {
