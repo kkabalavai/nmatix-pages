@@ -6,6 +6,7 @@
     <title>Nmatix Technologies</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -28,20 +29,28 @@
                     <p>Golden Mile Road, Kokapet, Hyderabad</p>
                     <p>Telangana 500075 - India</p>
                 </div>
-                <div class="contact-details">
-                    <h3>Phone</h3>
-                    <p>+91 82478 57695</p>
-                </div>
-                <div class="contact-details">
-                    <h3>Email</h3>
-                    <p><a href="mailto:contact@nmatix.com">contact@nmatix.com</a></p>
-                </div>
             </div>
-            <div class="business-hours">
-                <h2>Business Hours</h2>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 9:00 AM - 1:00 PM</p>
-            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px; background-color: #1a1a1a; border: 1px solid #333; border-radius: 5px; color: white;">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; background-color: #1a1a1a; border: 1px solid #333; border-radius: 5px; color: white;">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 10px; margin-bottom: 15px; background-color: #1a1a1a; border: 1px solid #333; border-radius: 5px; color: white; resize: vertical;"></textarea>
+                  </div>
+                  
+                  <button type="submit" style="background-color: #FF8A05; color: black; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold;">Submit</button>
+                </form>
+              </div>
         </section> 
 
         <footer>
