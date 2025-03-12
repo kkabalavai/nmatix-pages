@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
-    const formMessage = document.getElementById('form-message');
+    const formMessage = document.getElementById('contact-form-message');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
