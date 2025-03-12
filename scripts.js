@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -9,16 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const message = document.getElementById('message').value;
 
         const data = {
-            domainid: '0001',
-            formid: '0001',
+            domain_id: '0001',
+            form_id: '0001',
             name: name,
             email: email,
             message: message
         };
 
-        fetch('https://st8vsuxx2h.execute-api.ap-south-2.amazonaws.com/prod/form/submit', {
+        fetch('https://d8uip92nhf.execute-api.ap-south-2.amazonaws.com/prod/form/submit', {
             method: 'POST',
-            mode: 'no-cors',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -26,12 +26,17 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then(response => response.json())
         .then(data => {
-            alert('Form submitted successfully!');
+            console.log('Response Data:', data);
+            const referenceNumber = `#${data.id}`;
             form.reset();
+            form.style.display = 'none';
+            formMessage.style.display = 'block';
+            formMessage.innerHTML = `<p>Thank you for contacting us!<br><br>We appreciate you reaching out and will respond as soon as possible.<br><br>Reference Number: ${referenceNumber}<br><br>Please keep this reference number handy for any future correspondence.</p>`;
         })
         .catch(error => {
             console.error('Error:', error);
-            alert('There was an error submitting the form.');
-        });
+            form.style.display = 'none';
+            formMessage.style.display = 'block';
+            formMessage.innerHTML = '<p>There was an error submitting the form. Please try again later.</p>';        });
     });
 });
