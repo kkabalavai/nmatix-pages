@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             form.reset();
             form.style.display = 'none';
             formMessage.style.display = 'block';
-            formMessage.innerHTML = `<p>Thank you for contacting us!<br><br>We appreciate you reaching out and will respond as soon as possible.<br><br>Reference Number: ${referenceNumber}<br><br>Please keep this reference number handy for any future correspondence.</p>`;
+            formMessage.innerHTML = `<p>Thank you for your message! We’ll get back to you soon. <br><br>Reference Number: ${referenceNumber}</p>`;
         })
         .catch(error => {
             console.error('Error:', error);
